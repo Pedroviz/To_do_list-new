@@ -1,0 +1,35 @@
+# Ignorar node_modules (dependências do Node.js)
+node_modules/
+
+# Ignorar arquivos de ambiente (contêm credenciais)
+.env
+.env.local
+.env.development
+.env.production
+
+# Ignorar arquivos de configuração do Vercel
+.vercel/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+
+# Ignorar arquivos de IDE/Editor
+.vscode/
+.idea/
+
+# Ignorar build do React
+build/
+dist/
+
+# Ignorar cache do npm/yarn
+.npm
+.yarn
+yarn.lock
+package-lock.json
+
+# Ignorar arquivos gerados pelo React
+coverage/
+*.swps
