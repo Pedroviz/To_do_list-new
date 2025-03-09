@@ -109,7 +109,7 @@ cd to-do-list
 >
 > npm start
 >
-> O servidor estará rodando em http://localhost:5000.
+> O servidor estará rodando em http://localhost:8080.
 
 **4. Configure o frontend**
 

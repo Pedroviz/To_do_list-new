@@ -1,44 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import ToDoList from './ToDoList'; // Importe o componente ToDoList corretamente
 
+// Estilos para a Landing Page
+
+// Componente principal (App)
 const App = () => {
-    const [todos, setTodos] = useState([]);
-    const [newTask, setNewTask] = useState('');
-
-    // Buscar tarefas
-    useEffect(() => {
-        axios.get('http://localhost:5000/todos')
-            .then(response => setTodos(response.data))
-            .catch(error => console.error(error));
-    }, []);
-
-    // Adicionar tarefa
-    const addTask = () => {
-        if (!newTask) return;
-        axios.post('http://localhost:5000/todos', { task: newTask })
-            .then(response => {
-                setTodos([...todos, response.data]);
-                setNewTask('');
-            })
-            .catch(error => console.error(error));
-    };
-
     return (
-        <div>
-            <h1>To-Do List</h1>
-            <input
-                type="text"
-                value={newTask}
-                onChange={(e) => setNewTask(e.target.value)}
-                placeholder="Nova tarefa"
-            />
-            <button onClick={addTask}>Adicionar</button>
-            <ul>
-                {todos.map(todo => (
-                    <li key={todo.id}>{todo.task}</li>
-                ))}
-            </ul>
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/app" element={<ToDoList />} />
+            </Routes>
+        </Router>
     );
 };
 

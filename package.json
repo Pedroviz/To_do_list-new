@@ -1,0 +1,26 @@
+{
+  "name": "to_do_list-new",
+  "version": "1.0.0",
+  "description": "To-Do List - Projeto de Faculdade",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\"",
+    "install-all": "npm install --prefix backend && npm install --prefix frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedroviz/To_do_list-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pedroviz/To_do_list-new/issues"
+  },
+  "homepage": "https://github.com/Pedroviz/To_do_list-new#readme",
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
