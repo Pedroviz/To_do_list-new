@@ -1,178 +1,198 @@
-**To-Do List - Projeto de Faculdade**
+\# To-Do List - Projeto de Faculdade
 
 Este é um projeto de To-Do List desenvolvido como parte de um trabalho
-de faculdade. A aplicação consiste em um **frontend** (React) e
-um **backend** (Node.js/Express), integrados a um banco de dados
-PostgreSQL hospedado no **Neon Console**. O projeto pode ser rodado
-localmente ou deployado na **Vercel**.
+de faculdade. A aplicação consiste em um \*\*frontend\*\* (React) e um
+\*\*backend\*\* (Node.js/Express), integrados a um banco de dados
+PostgreSQL hospedado no \*\*Neon Console\*\*. O projeto pode ser rodado
+localmente ou implantado na \*\*Vercel\*\*.
 
-**Funcionalidades**
+\## Funcionalidades
 
-- **Adicionar tarefas**: Adicione novas tarefas à lista.
+\- \*\*Adicionar tarefas\*\*: Adicione novas tarefas à lista.
 
-- **Listar tarefas**: Visualize todas as tarefas cadastradas.
+\- \*\*Listar tarefas\*\*: Visualize todas as tarefas cadastradas.
 
-- **Integração com banco de dados**: As tarefas são armazenadas em um
-  banco de dados PostgreSQL.
+\- \*\*Excluir tarefas\*\*: Exclua tarefas da lista.
 
-- **Frontend e backend separados**: O frontend (React) se comunica com o
-  backend (Node.js) via API REST.
+\- \*\*Integração com banco de dados\*\*: As tarefas são armazenadas em
+um banco de dados PostgreSQL.
 
-**Pré-requisitos**
+\- \*\*Frontend e backend separados\*\*: O frontend (React) se comunica
+com o backend (Node.js) via API REST.
+
+\## Pré-requisitos
 
 Antes de rodar o projeto, certifique-se de ter instalado:
 
-1.  **Node.js** (versão 18 ou superior): [[Baixar
-    Node.js]{.underline}](https://nodejs.org/)
+1\. \*\*Node.js\*\* (versão 18 ou superior): \[Baixar
+Node.js\](https://nodejs.org/)
 
-2.  **PostgreSQL** (ou acesso a um banco de dados PostgreSQL): [[Baixar
-    PostgreSQL]{.underline}](https://www.postgresql.org/)
+2\. \*\*PostgreSQL\*\* (ou acesso a um banco de dados PostgreSQL):
+\[Baixar PostgreSQL\](https://www.postgresql.org/)
 
-3.  **Git**: [[Baixar Git]{.underline}](https://git-scm.com/)
+3\. \*\*Git\*\*: \[Baixar Git\](https://git-scm.com/)
 
-4.  **VSCode** (ou outro editor de código de sua preferência).
+4\. \*\*VSCode\*\* (ou outro editor de código de sua preferência).
 
-**Passo a Passo para Rodar o Projeto**
+\## Passo a Passo para Rodar o Projeto
 
-**1. Clone o repositório**
+\### 1. Clone os repositórios
 
-Abra o terminal e execute o seguinte comando para clonar o repositório:
+Abra o terminal e execute os seguintes comandos para clonar os
+repositórios:
 
-bash
+\`\`\`bash
 
-git clone https://github.com/seu-usuario/to-do-list.git
+git clone
+\[https://github.com/seu-usuario/to-do-list-frontend.git\](https://www.google.com/search?q=https://github.com/seu-usuario/to-do-list-frontend.git)
 
-cd to-do-list
+git clone
+\[https://github.com/seu-usuario/to-do-list-backend.git\](https://www.google.com/search?q=https://github.com/seu-usuario/to-do-list-backend.git)
 
 **2. Configure o banco de dados**
 
 **Usando o Neon Console**
 
-1.  Crie um banco de dados no [[Neon
+1.  Crie um banco de dados no [[Neon
     Console]{.underline}](https://neon.tech/).
 
-2.  Anote as credenciais de conexão (host, usuário, senha, nome do
+2.  Anote as credenciais de conexão (host, usuário, senha, nome do
     banco).
 
 **Usando PostgreSQL local**
 
 1.  Instale o PostgreSQL localmente.
 
-2.  Crie um banco de dados chamado todos.
+2.  Crie um banco de dados chamado todos.
 
-3.  Crie a tabela todos com o seguinte comando SQL:
+3.  Crie a tabela todos com o seguinte comando SQL:
 
-> sql
->
-> CREATE TABLE todos (
->
-> id SERIAL PRIMARY KEY,
->
-> task TEXT NOT NULL,
->
-> completed BOOLEAN DEFAULT FALSE
->
-> );
+\<!\-- end list \--\>
+
+SQL
+
+CREATE TABLE todos (
+
+id SERIAL PRIMARY KEY,
+
+task TEXT NOT NULL,
+
+completed BOOLEAN DEFAULT FALSE
+
+);
 
 **3. Configure o backend**
 
-1.  Navegue até a pasta backend/:
+1.  Navegue até a pasta to-do-list-backend/:
 
-> bash
->
-> cd backend
+\<!\-- end list \--\>
 
-2.  Crie um arquivo .env na pasta backend/ e adicione as credenciais do
-    banco de dados:
+Bash
 
-> env
->
-> DB_USER=seu_usuario
->
-> DB_PASSWORD=sua_senha
->
-> DB_HOST=seu_host
->
-> DB_PORT=5432
->
-> DB_NAME=seu_banco_de_dados
+cd to-do-list-backend
+
+2.  Crie um arquivo .env na pasta to-do-list-backend/ e adicione as
+    credenciais do banco de dados:
+
+\<!\-- end list \--\>
+
+Snippet de código
+
+DB_USER=seu_usuario
+
+DB_PASSWORD=sua_senha
+
+DB_HOST=seu_host
+
+DB_PORT=5432
+
+DB_NAME=seu_banco_de_dados
 
 3.  Instale as dependências:
 
-> bash
->
-> npm install
+\<!\-- end list \--\>
+
+Bash
+
+npm install
 
 4.  Inicie o servidor backend:
 
-> bash
->
-> npm start
->
-> O servidor estará rodando em http://localhost:8080.
+\<!\-- end list \--\>
+
+Bash
+
+npm start
+
+O servidor estará rodando em http://localhost:8080.
 
 **4. Configure o frontend**
 
-1.  Navegue até a pasta frontend/:
+1.  Navegue até a pasta to-do-list-frontend/:
 
-> bash
->
-> cd ../frontend
+\<!\-- end list \--\>
+
+Bash
+
+cd ../to-do-list-frontend
 
 2.  Instale as dependências:
 
-> bash
->
-> npm install
+\<!\-- end list \--\>
+
+Bash
+
+npm install
 
 3.  Inicie o servidor de desenvolvimento:
 
-> bash
->
-> npm start
->
-> O frontend estará rodando em http://localhost:3000.
+\<!\-- end list \--\>
+
+Bash
+
+npm start
+
+O frontend estará rodando em http://localhost:3000.
 
 **5. Teste a aplicação**
 
-1.  Abra o navegador e acesse http://localhost:3000.
+1.  Abra o navegador e acesse http://localhost:3000.
 
-2.  Adicione novas tarefas e verifique se elas são salvas no banco de
-    dados.
+2.  Adicione, liste e exclua tarefas.
 
 **Estrutura do Projeto**
 
-to-do-list/
+**Backend (to-do-list-backend/)**
 
-├── backend/
+to-do-list-backend/
 
-│ ├── src/
+├── src/
 
-│ │ ├── index.js \# Ponto de entrada do backend
+│ ├── index.js \# Ponto de entrada do backend
 
-│ │ └── \... \# Outros arquivos do backend
+│ └── \... \# Outros arquivos do backend
 
-│ ├── package.json \# Dependências do backend
+├── package.json \# Dependências do backend
 
-│ └── .env \# Variáveis de ambiente do backend
+├── .env \# Variáveis de ambiente do backend
 
-├── frontend/
+└── vercel.json \# Configurações de deploy do Vercel
 
-│ ├── src/
+**Frontend (to-do-list-frontend/)**
 
-│ │ ├── App.js \# Componente principal do frontend
+to-do-list-frontend/
 
-│ │ ├── index.js \# Ponto de entrada do frontend
+├── src/
 
-│ │ └── \... \# Outros arquivos do frontend
+│ ├── App.js \# Componente principal do frontend
 
-│ ├── package.json \# Dependências do frontend
+│ ├── index.js \# Ponto de entrada do frontend
 
-│ └── .env \# Variáveis de ambiente do frontend
+│ └── \... \# Outros arquivos do frontend
 
-├── .gitignore \# Arquivos ignorados pelo Git
+├── package.json \# Dependências do frontend
 
-└── README.md \# Este arquivo
+└── .env \# Variáveis de ambiente do frontend
 
 **Como Contribuir**
 
@@ -191,19 +211,25 @@ to-do-list/
 
 **Backend**
 
-1.  Navegue até a pasta backend/ e execute:
+1.  Navegue até a pasta to-do-list-backend/ e execute:
 
-> bash
->
-> vercel
+\<!\-- end list \--\>
+
+Bash
+
+vercel \--prod
 
 2.  Siga as instruções para configurar o deploy.
 
 **Frontend**
 
-1.  Navegue até a pasta frontend/ e execute:
+1.  Navegue até a pasta to-do-list-frontend/ e execute:
 
-> vercel
+\<!\-- end list \--\>
+
+Bash
+
+vercel \--prod
 
 2.  Siga as instruções para configurar o deploy.
 
@@ -219,8 +245,8 @@ to-do-list/
 
 **Autores**
 
-- [https://github.com/Pedroviz]
-- matricula 2323832 
+- [[https://github.com/Pedroviz]{.underline}](https://github.com/Pedroviz) -
+  matricula 2323832
 
 - [[Nome do Colega]{.underline}](https://github.com/colega)
 
@@ -228,12 +254,13 @@ to-do-list/
 
 **Licença**
 
-Este projeto está licenciado sob a licença MIT. Veja o
-arquivo [[LICENSE]{.underline}](https://license/) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo
+[[LICENSE]{.underline}](https://license/) para mais detalhes.
 
 **Agradecimentos**
 
 - Aos colegas de grupo pela colaboração.
 
-Se tiver alguma dúvida ou problema, sinta-se à vontade para abrir
-uma [issue]{.underline} no repositório.
+Se tiver alguma dúvida ou problema, sinta-se à vontade para abrir uma
+[[issue]{.underline}](https://www.google.com/url?sa=E&source=gmail&q=https://github.com/seu-usuario/to-do-list/issues)
+no repositório.
