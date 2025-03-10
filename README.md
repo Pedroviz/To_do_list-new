@@ -219,7 +219,8 @@ to-do-list/
 
 **Autores**
 
-- [https://github.com/Pedroviz]{.underline}
+- [https://github.com/Pedroviz]
+- matricula 2323832 
 
 - [[Nome do Colega]{.underline}](https://github.com/colega)
 
