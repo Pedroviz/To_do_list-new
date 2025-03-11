@@ -251,6 +251,8 @@ vercel \--prod
 - [[https://github.com/millenebrj95]{.underline}](https://github.com/millenebrj95) -
   matricula 2326165
 
+- [[João Eduardo Lucio Araujo]{.underline}](https://github.com/DuDu0133) - matricula 2318859
+
 - [[Nome do Colega]{.underline}](https://github.com/colega)
 
 **Licença**
