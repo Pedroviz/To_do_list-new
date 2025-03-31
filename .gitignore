@@ -34,3 +34,5 @@ package-lock.json
 coverage/
 *.swps
 .vercel
+readme.docx
+*.pdf
