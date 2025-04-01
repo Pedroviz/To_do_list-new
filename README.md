@@ -253,7 +253,7 @@ vercel \--prod
 
 - [[https://github.com/DuDu0133]{.underline}](https://github.com/DuDu0133) - matricula 2318859
 
-- [[Nome do Colega]{.underline}](https://github.com/colega)
+- [[https://github.com/HerisonDaniel]{.underline}](https://github.com/HerisonDaniel) - matricula 2315221
 
 **Licença**
 
